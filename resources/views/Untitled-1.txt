@@ -1,0 +1,17 @@
+
+  <h3 class="text-center text-danger"><b>Add New Post</b> </h3>
+                        <form action="/post" method="post" enctype="multipart/form-data">
+                         @csrf
+                         
+
+                         <label class="m-2">Cover Image</label>
+                         <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
+
+                         <label class="m-2">Images</label>
+                         <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="images[]" multiple>
+
+                        <button type="submit" class="btn btn-danger mt-3 ">Submit</button>
+                        </form>
+
+                                    <h3 class="text-center text-danger"><b>Laravel CRUD With Multiple Image Upload</b> </h3>
+            <a href="/create" class="btn btn-outline-success">Add New Post</a>
